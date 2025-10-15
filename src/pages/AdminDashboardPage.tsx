@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { useAuth } from "../contexts/AuthContext";
-import { getDashboardData, type DashboardData } from "../services/adminService";
-import { Users, GraduationCap, BookOpen, UserCheck } from "lucide-react";
+import  { useState, useEffect } from 'react';
+import { useAuth } from '../contexts/AuthContext';
+import { getDashboardData, type DashboardData } from '../services/adminService';
 
 const StatCard = ({
   title,
