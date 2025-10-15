@@ -153,7 +153,6 @@ const CreateCoursePage = () => {
             >
               {isLoading ? (
                 <span className="flex items-center justify-center gap-2">
-                  <SpinnerIcon className="w-5 h-5" />
                   Creating Course...
                 </span>
               ) : (

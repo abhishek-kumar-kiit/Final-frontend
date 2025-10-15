@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useAuth } from "../contexts/AuthContext";
+ 
 
 const HomePage: React.FC = () => {
-  const { user } = useAuth();
+ 
   return (
     <div className="bg-[#F9FAFB] min-h-screen flex flex-col">
       <section className="relative flex flex-col lg:flex-row items-center justify-center lg:justify-between px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 py-16 sm:py-20 md:py-24 lg:py-0 min-h-[calc(100vh-80px)] lg:h-screen overflow-hidden">
