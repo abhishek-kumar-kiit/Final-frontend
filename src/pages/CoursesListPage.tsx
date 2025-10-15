@@ -1,11 +1,9 @@
-// src/pages/CoursesListPage.tsx
-
 import { useState, useEffect } from "react";
 import { getAllCourses } from "../services/courseService";
 import { useAuth } from "../contexts/AuthContext";
 import type { Course } from "../types";
 import CourseCard from "../components/CourseCard";
-import { Search, Filter } from "lucide-react";
+import { Search} from "lucide-react";
 
 const CoursesListPage = () => {
   const { token } = useAuth();
@@ -40,7 +38,7 @@ const CoursesListPage = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    // Filter courses based on search
+    
     const filtered = searchTerm
       ? allCourses.filter(
           (course) =>
@@ -79,10 +77,9 @@ const CoursesListPage = () => {
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(e.target.value);
-    setCurrentPage(1); // Reset to first page on search
+    setCurrentPage(1);
   };
 
-  // Generate page numbers for pagination
   const getPageNumbers = () => {
     const pages = [];
     const maxVisible = 5;
@@ -161,7 +158,6 @@ const CoursesListPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Page Header */}
         <div className="text-center mb-8 sm:mb-10">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-3">
             Explore Our{" "}
