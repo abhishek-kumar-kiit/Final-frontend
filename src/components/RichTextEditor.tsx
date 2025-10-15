@@ -5,6 +5,7 @@ import SimpleMDE from 'react-simplemde-editor';
 import 'easymde/dist/easymde.min.css';
 import { Type, Code, FileText } from 'lucide-react';
 
+
 interface RichTextEditorProps {
   value: string;
   onChange: (value: string, type: 'text' | 'markdown' | 'html') => void;
