@@ -38,7 +38,7 @@ const AdminLayout = () => {
               L
             </div>
             <div>
-              <h1 className="text-lg font-bold">LMS Admin</h1>
+              <h1 className="text-lg font-bold">Learnify</h1>
               <p className="text-xs text-blue-200">Management Portal</p>
             </div>
           </div>
